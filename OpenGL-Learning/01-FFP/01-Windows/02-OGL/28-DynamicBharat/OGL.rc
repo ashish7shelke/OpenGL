@@ -1,0 +1,9 @@
+#include<windows.h>
+#include "OGL.h"
+
+MYICON ICON MyIcon.ico
+
+MY_BACKGROUND BITMAP BharatBackground.bmp
+MY_FIGHTER_JET BITMAP FighterJetColor.bmp
+
+MY_MUSIC SOUND 01_WatanKiRaahMein.wav
