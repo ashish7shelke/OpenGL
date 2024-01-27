@@ -1,0 +1,65 @@
+Let there be Light - Bible
+
+Tamasomay Jyotirgamay
+
+Ambient Light -> That light that scattered from surface, light source and direction is not definable (If sun not visible at sunset but scattering light) Feeling is ambient
+Diffused Light-> That light that its source and direction is definable  (Sun Light), visible is diffused
+Specular Light -> As light diffused light, source and direction is known, but it bounce off from surface and enters into eyes (Shiny material). Its always white or grey
+Emusive Light -> When material it self beomes source of light its emusive light
+
+Color intensity is decided by diffused light
+
+//Steps of lighting
+Step1: Give Normals to the surfacs/object surfaces to which we are giing to lit
+		Normals give detauls of orientation of surface
+		Per vertex, Per premitive, per fragment, per surface, Per patch
+		Normals must be unit vector. if not in unit length then lighting becomes ugly and patchy. 
+		To do this there are 2 ways in FFP
+			a) Enable GL_NORMALIZE OR --> It checks whether vecor is unit vector if not then it convert to unit length
+			b) Enable GL_RESCALE_NORMAL --> 
+		glNormal*()			
+			
+Step2: Decide source of light, type of light, properties of light and enable accordingly and also enable global lighting
+		FFP OpenGL supports 8 lights -> GL_LIGHT0 to GL_LIGHT7
+		By default GL_LIGHT0 is enables thats why even though without lighting objects were visible.
+		There are about 10 imp properties of light. glLighfv()
+			GL_DIFFSED, GL_AMBIENT, GL_POSITION, GL_SPECULAR, 
+			Spotlight related: GL_SPOT_CUTOFF, GL_SPOT_DIRECTION, GL_SPOT_EXPONENT
+			Attenuation: GL_CONSTANT_ATTENUATION, GL_LINEAR_ATTENUATION, GL_QUADRATIC_ATTENUATION
+		By default Light0's GL_DIFFUSED & GL_SPECULAR are white. Other lights is black. GL_AMBIENT of all lights is black
+		Enabling light only is not enough. There is global lighting switch which has to enable to enable all default lighting.(GL_LIGHTING)
+		
+Step3: Decide lighting model
+		We useally no need to use this step because default lighting model does things well.
+		There are 4 points to be considered for lighting
+		a) Whether to consider outer surface or inner surface or both - GL_LIGHT_MODEL_TWO_SIDED. By default lighting model is not 2 sided
+		b) Whether to consider global ambient light or not. THis is specified by GL_LIGHT_MODEL_AMBIENT. By default global light is considered.
+		c) Whether to consider position of the viewer, By default OpenGL assumes viewer is infinitely away and looking into screen.
+			GL_LIGHT_MODEL_LOCAL_VIEWER
+		d) Whether to consider specular light as part of ambinet light or diffused light or not & Specular light to be considered before texturing ot after texturing
+			GL_LIGHT_MODEL_COLOR_CONTROL
+		glLightModels*()
+
+Step4: Specify material property
+		While considering material 2 things needs to considered
+			a) on which surface material is applied on front / back or both. By default front face is considered
+				GL_FRONT, FL_BACK, GL_FRONT_AND_BACK
+			b) 7 Properties of material
+				GL_DIFFSED, GL_AMBIENT, GL_SPECULAR, GL_SHININESS, GL_AMBIENT_AND_DIFFUSE, GL_EMISSION, GL_COLOR_INDEXES
+			glMaterial*()
+		
+#	OpenGL considers 2 types of lights according to positions. Both have same option GL_POSITION
+		a) Directional light: Sunlight. 
+			In direction Light is assumed to be positioned at infinite. It is specified 4th member in position array as '0'
+		b) Positional light: Table Lamp.
+			Location of positional light is not infinite. Specify 4th member of position array as '1'.
+		
+#	What is significance last member of ambient, specular & diffused array.
+		It has no meaning whether 0 / 1 until blending is enabled.
+		
+Leasders: Blending & Spotlight
+		
+			
+
+Sir, Maaf kara chukat asel tr, Unit normal vector ghetal nai tr, normal vector chi magnitude light intensity sobat multiply houn patches yetil mhanun. 
+Ajun ek karan asa asel ki, material light chi direction hi normal vector ni milel. Unit length mule material light intensity change honar nai. 
