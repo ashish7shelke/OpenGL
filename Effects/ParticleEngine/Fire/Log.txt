@@ -1,4 +1,5 @@
 Program started succesfully.
 Program Window Active = TRUE.
+Escape Pressed ... Exiting !!!
 Program Window Active = FALSE.
 Program finished successfully.

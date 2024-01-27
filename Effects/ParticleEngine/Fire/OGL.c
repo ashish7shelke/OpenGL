@@ -472,7 +472,7 @@ int initialize(void)
 		return -6;
 	}
 
-	glDisable(GL_DEPTH_TEST);
+	//glDisable(GL_DEPTH_TEST);
 	glEnable(GL_BLEND);									// Enable Blending
 	glBlendFunc(GL_SRC_ALPHA,GL_ONE);					// Type Of Blending To Perform
 	glHint(GL_PERSPECTIVE_CORRECTION_HINT,GL_NICEST);	// Really Nice Perspective Calculations
@@ -602,6 +602,7 @@ void display(void)
 void DrawFire()
 {
 		//Particle Code
+	glDisable(GL_DEPTH_TEST);
 	glPushMatrix();
 	
 	//glPushAttrib(GL_LIGHTING_BIT);
@@ -619,10 +620,10 @@ void DrawFire()
 			glColor4f(particle[loop].r,particle[loop].g,particle[loop].b,particle[loop].life);
 			glBindTexture(GL_TEXTURE_2D, texture_particle);
 			glBegin(GL_TRIANGLE_STRIP);						// Build Quad From A Triangle Strip
-			    glTexCoord2d(0.65,0.65); glVertex3f(x+0.5f,y+0.5f,z); // Top Right
-				glTexCoord2d(0.35,0.65); glVertex3f(x-0.5f,y+0.5f,z); // Top Left
-				glTexCoord2d(0.65,0.35); glVertex3f(x+0.5f,y-0.5f,z); // Bottom Right
-				glTexCoord2d(0.35,0.35); glVertex3f(x-0.5f,y-0.5f,z); // Bottom Left
+			    glTexCoord2d(0.65,0.65); glVertex3f(x+0.2f,y+0.2f,z); // Top Right
+				glTexCoord2d(0.35,0.65); glVertex3f(x-0.2f,y+0.2f,z); // Top Left
+				glTexCoord2d(0.65,0.35); glVertex3f(x+0.2f,y-0.2f,z); // Bottom Right
+				glTexCoord2d(0.35,0.35); glVertex3f(x-0.2f,y-0.2f,z); // Bottom Left
 			glEnd();
 			glBindTexture(GL_TEXTURE_2D, 0);
 			// Done Building Triangle Strip
@@ -687,6 +688,8 @@ void DrawFire()
 	//glBindTexture(GL_TEXTURE_2D, 0);
 	//glPopAttrib();
 	glPopMatrix();
+
+	glEnable(GL_DEPTH_TEST);
 }
 
 // Draw the ground as a series of triangle strips
