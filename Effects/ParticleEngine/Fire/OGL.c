@@ -620,10 +620,10 @@ void DrawFire()
 			glColor4f(particle[loop].r,particle[loop].g,particle[loop].b,particle[loop].life);
 			glBindTexture(GL_TEXTURE_2D, texture_particle);
 			glBegin(GL_TRIANGLE_STRIP);						// Build Quad From A Triangle Strip
-			    glTexCoord2d(0.65,0.65); glVertex3f(x+0.2f,y+0.2f,z); // Top Right
-				glTexCoord2d(0.35,0.65); glVertex3f(x-0.2f,y+0.2f,z); // Top Left
-				glTexCoord2d(0.65,0.35); glVertex3f(x+0.2f,y-0.2f,z); // Bottom Right
-				glTexCoord2d(0.35,0.35); glVertex3f(x-0.2f,y-0.2f,z); // Bottom Left
+			    glTexCoord2d(0.65,0.65); glVertex3f(x+0.5f,y+0.5f,z); // Top Right
+				glTexCoord2d(0.35,0.65); glVertex3f(x-0.5f,y+0.5f,z); // Top Left
+				glTexCoord2d(0.65,0.35); glVertex3f(x+0.5f,y-0.5f,z); // Bottom Right
+				glTexCoord2d(0.35,0.35); glVertex3f(x-0.5f,y-0.5f,z); // Bottom Left
 			glEnd();
 			glBindTexture(GL_TEXTURE_2D, 0);
 			// Done Building Triangle Strip
