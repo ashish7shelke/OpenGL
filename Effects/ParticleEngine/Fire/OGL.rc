@@ -1,6 +1,0 @@
-#include<windows.h>
-#include "OGL.h"
-
-MYICON ICON MyIcon.ico
-GROUND_TEXTURE BITMAP floor.bmp
-PARTICLE_TEXTURE BITMAP Particle.bmp
