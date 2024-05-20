@@ -1,6 +1,0 @@
-Program started succesfully.
-Program Window Active = TRUE.
-Fullscreen = TRUE
-Escape Pressed ... Exiting !!!
-Program Window Active = FALSE.
-Program finished successfully.

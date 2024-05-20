@@ -1,8 +1,0 @@
-Let there be Light - Bible
-
-Tamasomay Jyotirgamay
-
-Ambient Light -> That light that scattered from surface, light source and direction is not definable (If sun not visible at sunset but scattering light) Feeling is ambient
-Diffused Light-> That light that cits source and direction is definable  (Sun Light), visible is diffused
-Specular Light -> As light diffused light, source and direction is known, but it bounce off from surface and enters into eyes (Shiny material). Its always white or grey
-Emusive Light -> When material it self beomes source of light its emusive light

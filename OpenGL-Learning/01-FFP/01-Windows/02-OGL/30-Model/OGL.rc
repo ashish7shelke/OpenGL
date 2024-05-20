@@ -1,5 +1,0 @@
-#include<windows.h>
-#include "OGL.h"
-
-MYICON ICON MyIcon.ico
-BITMAP_MARBEL BITMAP marble.bmp
