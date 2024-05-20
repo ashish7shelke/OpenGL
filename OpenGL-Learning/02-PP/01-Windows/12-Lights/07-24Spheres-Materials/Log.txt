@@ -1,0 +1,7 @@
+Program started succesfully.
+-------------------------------------------------------
+Fullscreen = TRUE
+Fullscreen = FALSE
+Escape Pressed ... Exiting !!!
+-------------------------------------------------------
+Program finished successfully.

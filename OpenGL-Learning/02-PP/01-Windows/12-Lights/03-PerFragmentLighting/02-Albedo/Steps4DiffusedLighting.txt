@@ -1,0 +1,9 @@
+
+Diffused light = ld * kd * (s.n)
+s = Light source
+n = Normals (Transformed normal)
+Step 1: Calculate eye co-ordinates by multiplying modelViewMatrix & Position Attribute vector
+Step 2: Calulate normal matrix by taking [3 x 3] matrix from upper left of model view matrix by first inverting and transposing model view matrix
+Step 3: Transform normal (n) by normalsing the product of normal matrix and normal attribute. This will be our 'n'
+Step 4: Calculate light source  vector(s) by normalising subtraction of light position and eyePosition vector
+Step 5: Diffused light = ld * kd * (s.n) -> dot product of s & n

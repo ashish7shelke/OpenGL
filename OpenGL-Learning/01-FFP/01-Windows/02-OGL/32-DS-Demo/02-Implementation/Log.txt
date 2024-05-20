@@ -1,0 +1,10 @@
+Program started succesfully.
+Program Window Active = TRUE.
+fCamx = 79.851517.
+fCamx = 81.221542.
+fCamx = 81.631546.
+Program Window Active = FALSE.
+Program Window Active = TRUE.
+Escape Pressed ... Exiting !!!
+Program Window Active = FALSE.
+Program finished successfully.

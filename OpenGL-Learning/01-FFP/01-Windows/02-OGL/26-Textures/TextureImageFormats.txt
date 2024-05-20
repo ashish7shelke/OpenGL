@@ -1,0 +1,61 @@
+
+Most Commonly Used Image Format
+
+JPEG: Jpoint Picture Picture Expert Groups 
+	*.jpg
+	*.jpeg
+	
+PNG: Portable Network Graphics
+	*.png
+	
+	Android, iPhone
+	
+TIFF: Tagged Interchanged File Format
+	*.tif
+	*.tiff
+	
+BMP: Bitmap
+	*.bmp
+	
+TGA: True Vision Graphics Adapter
+	*.tga
+	
+TARGA: True Vision Advanced Raster Graphics Adapter
+	*.tga	
+	*.targa
+	
+PPM: Portable Pix Map
+	*.ppm
+	
+	
+// Programmable Pipeline
+DDS: (Windows) Direct Draw Surface
+	*.dds
+	
+HEIF: High Efficiency Image Format (Apple)
+	*.
+	
+EXIF: Exchangable Image Format 
+
+HDR: High Dynamic Range (Kay distay - Performance issue) Offline Rendering
+	*.hdr
+	
+OpenEXR: Nearer to HDR, much better performant than HDR (Created by ILame)
+		Open Extendsed Range`
+	*.oexr
+	
+ASTC: (Best for Quality & COmpression) Adaptive Scalable Texture COmpression - ARM & AMD
+	Good for Network, Desktop
+	
+KTX: Khronous Texture
+
+GIF: Graphics Interchange Format
+
+
+
+	
+
+	
+	
+
+	

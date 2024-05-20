@@ -1,0 +1,7 @@
+
+This is suppose to be highest quality lighting
+
+Photo realistc is more important than performance then use PerFragment lighting.
+When performance is impotant then use PerVertex lighting.
+
+Doing lighting calculation in fragment shader.

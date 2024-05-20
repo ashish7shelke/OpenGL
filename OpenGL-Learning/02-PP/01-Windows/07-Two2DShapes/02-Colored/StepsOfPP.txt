@@ -1,0 +1,58 @@
+* Steps for initialization
+
+Step1: Write the Vertex Shader Code 
+Step2: Create Vertex Shader Object
+Step3: Give vertex shader source code to shader
+Step4: Let openGL compile vertex Shader
+Step5: Check compilation errors if any 
+    a) Get compile status
+    b) If compilation errors, get length of compilation error info log
+    c) Declare a string variable and allocate memory equal to above length
+    d) Get compilation error info log into memory allocated string
+    e) Print compilation error info log
+    f) Free the allocated memory
+    g) Uninitialize and exit 
+
+Step6: Write the Fragment Shader Code 
+Step7: Follow all steps for fragment shader
+
+Step8: Create shader Object
+Step9: Attch both shader to this Program
+Step10: Bind attribute locations with shader program object
+
+Step11: Link the program
+Step12: Do abbove shader compilation steps for linking errors
+
+Step13: Declare position and color arrays
+
+Step14: Create vertex array object
+Step15: Bind with Vao
+
+Step16: Create vertex buffer for postion
+Step17: Bind with VBO postions
+
+Step18: Repet 16 & 17 for color
+
+Step19: Unbind with VAO
+---------------------------------------
+
+*Steps for display
+Step1: Use Shadre program object
+Step2: Bind with VAO
+Step3: Draw the geometry/shapes/scens
+Step4: Unbind with Vao
+Step5: Unuse shader program object
+-------------------------------------
+
+*Steps for Shader object and shader program uninitialization
+Step1: Use shader program object
+Step2: Get number of attached shader
+Step3: Create and allocate array of shader objects according to number of attached shaders
+Step4: Get shader objects into this allocated array
+Step5: Dettach and delete shader objects iteratively
+Step6: Free the memory for shader object
+Step7: Unused program objct
+Step8: Delete Shader program object
+Step9: Delete VBO for color
+Step10: Delete VBO for position
+Step11: Delete VAO

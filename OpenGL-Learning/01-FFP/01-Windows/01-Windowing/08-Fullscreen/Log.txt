@@ -1,0 +1,4 @@
+Program started succesfully.
+Fullscreen = TRUE
+Fullscreen = FALSE
+Program finished successfully.

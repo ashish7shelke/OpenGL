@@ -1,0 +1,5 @@
+
+Ambient Light = La * Ka 
+Diffused light = ld * kd * (s . n)
+Specular Light = Ls * Ks * (r . v)^f  -> r = reflection vector & v = view vector & f = material shyness
+ADS light = A + D + S 

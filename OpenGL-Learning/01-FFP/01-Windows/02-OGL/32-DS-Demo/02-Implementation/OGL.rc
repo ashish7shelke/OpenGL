@@ -1,0 +1,27 @@
+#include<windows.h>
+#include "OGL.h"
+
+MYICON ICON MyIcon.ico
+
+MYSOUND SOUND Resources/Vasana_Sukhachya_Rangi.wav
+
+GROUND_CITY_TEXTURE BITMAP Resources/floor.bmp
+GROUND_VILLAGE_TEXTURE BITMAP Resources/vlg_land.bmp
+BACKGROUND_TEXTURE BITMAP Resources/Back_Wall.bmp
+CITYROAD_TEXTURE BITMAP Resources/CityRoad.bmp
+
+VILLAGE_TEXTURE BITMAP Resources/Village.bmp
+
+BODY BITMAP Resources/human2_body.bmp
+PHOTOM BITMAP Resources/human2_photom.bmp
+SHORTS BITMAP Resources/Stone.bmp
+SKIN BITMAP Resources/human2_skin.bmp
+ARM BITMAP Resources/human2_body.bmp
+
+HUMAN2_BODY BITMAP Resources/human1_body.bmp
+HUMAN2_PHOTOM BITMAP Resources/human1_photom.bmp
+HUMAN2_SHORTS BITMAP Resources/human1_shorts.bmp
+HUMAN2_SKIN BITMAP Resources/human1_skin.bmp
+HUMAN2_ARM BITMAP Resources/human1_body.bmp
+
+WATER_TEXTURE BITMAP Resources/water.bmp

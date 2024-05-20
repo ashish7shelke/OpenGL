@@ -1,0 +1,17 @@
+Log file created succesfully 
+10 Matching FBConfigs found 
+Selected Best Visaul Info ID 76 
+Core profile glxContext obtained succesfully 
+Supportive 
+--------- OpenGL Details: ---------
+OpenGL Vendor : NVIDIA Corporation 
+OpenGL Renderor : NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2 
+OpenGL Version : 4.6.0 NVIDIA 545.29.06 
+OpenGL GLSL Version : 4.60 NVIDIA 
+OpenGL Supported Extensons : 
+-------------------------------------------------------
+1..!!
+
+2..!!
+
+---------- OpenGL Debug Logs End ----------
